@@ -1,0 +1,19 @@
+.Card {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 260px;
+  height: 269px;
+  padding: 51px 26px;
+  box-shadow: 0px 0px 22px -10px var(--primary-color-darken);
+  margin: auto;
+}
+
+.Card p {
+  font-size: 32px;
+  color: var(--secondary-color);
+  text-align: center;
+}

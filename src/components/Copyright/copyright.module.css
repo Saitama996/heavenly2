@@ -1,0 +1,18 @@
+.Copyright {
+  margin-top: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 39px;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .Copyright {
+    font-size: 20px;
+  }
+}
+

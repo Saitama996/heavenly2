@@ -1,0 +1,97 @@
+.RoadMap {
+  margin-top: 80px;
+}
+
+.RoadMapContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.RoadMapImage {
+  transform: translateX(-1px);
+  animation: animateTruck;
+  animation-duration: .95s;
+  animation-iteration-count: infinite;
+  height: 318.68px;
+}
+
+
+@keyframes animateTruck {
+  0% {
+    transform: translateX(-1px);
+  }
+  12.5% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(1px);
+  }
+  37.5% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-1px);
+  }
+  62.5% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(1px);
+  }
+  87.5% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-1px);
+  }
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+}
+
+.Logo p {
+  font-size: 54px;
+  font-weight: bolder;
+  color: var(--primary-color-darken);
+  margin-left: -12px;
+
+}
+
+.Items {
+  margin-top: 41px;
+  
+}
+
+.ItemsMobile {
+  display: none;
+}
+
+/* If the browser window is 1300px or smaller */
+
+@media only screen and (max-width: 1300px) {
+  .RoadMapImage {display: none;}
+  .Items {display: none;}
+
+  .Logo p {
+    text-align: center;
+    margin: auto;
+  }
+
+  .ItemsMobile {
+    margin-top: 46px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .ItemsMobile {
+    grid-template-columns: repeat(1, auto);
+  }
+}

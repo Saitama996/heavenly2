@@ -1,0 +1,36 @@
+.NavItems {
+  display: flex;
+  flex-direction: row;
+}
+
+.Hamburger {
+  display: none;
+}
+
+.NavItems > div {
+  margin: 0 17px;
+}
+
+.NavItems > div:first-child {
+  margin-left: 0px;
+}
+
+.NavItems > div:last-child {
+  margin-right: 0;
+}
+
+.NavItems > div > a {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--seconday-color-darken);
+}
+
+/* If the browser window is 900px or smaller*/
+@media only screen and (max-width: 900px) {
+  .NavItems {
+    display: none;
+  }
+  .Hamburger {
+    display: block;
+  }
+}

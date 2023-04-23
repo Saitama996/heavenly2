@@ -1,0 +1,19 @@
+.Container {
+  position: relative;
+}
+
+.Container:hover .LowerBorder {
+  width: 90%;
+  transition: width 0.5s ease-in-out;
+}
+
+.LowerBorder {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0%;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin-top: 5px;
+}
+

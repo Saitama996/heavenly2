@@ -1,0 +1,25 @@
+.RoadItem {
+  display: flex;
+  align-items: center;
+}
+
+.Shape {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+}
+
+.RoadItem p {
+  font-size: 22px;
+  color: var(--secondary-color);
+  margin-left: 10px;
+}
+
+
+.Row {
+  width: 561.5px;
+  background-color: var(--secondary-color);
+  height: 1px;
+  margin: 10px 0px;
+}

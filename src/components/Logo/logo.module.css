@@ -1,0 +1,15 @@
+.LogoContainer {
+  width: 87px;
+}
+
+.Logo img {
+  transform: translateX(5px);
+}
+
+
+.CompanyName {
+  font-weight: bolder;
+  text-align: center;
+  transform: translateY(-15px);
+  font-size: 23px;
+}

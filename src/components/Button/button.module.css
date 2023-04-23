@@ -1,0 +1,21 @@
+.ButtonDiv {
+  display: inline;
+}
+
+.Button {
+  color: white;
+  font-weight: bold;
+  font-size: 41px;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  padding: 15px 50px;
+  border: none;
+  outline: none;
+}
+
+.Button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}

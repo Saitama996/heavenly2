@@ -1,0 +1,135 @@
+.FooterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.IntroText {
+  width: 450px;
+  height: 132px;
+  margin-left: 20px;
+  transform: translate(5px, 10px);
+}
+
+.Intro p {
+  font-size: 33px;
+  font-weight: bold;
+  color: var(--dark-blue);
+  display: inline;
+}
+
+.Social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Social img {
+  padding: 0 30px;
+  transform: scale(0.9);
+}
+
+.Contact {
+  margin-top: 43px;
+}
+
+.Contact button {
+  background-color: var(--primary-color);
+  border: none;
+  outline: none;
+  width: 398px;
+  height: 69px;
+  font-size: 40px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.Contact button:hover {
+  cursor: pointer;
+  background-color: var(--dark-blue);
+}
+
+.Links {
+  display: flex;
+  margin-top: 43px;
+}
+
+.Links a {
+  text-decoration: none;
+  font-size: 40px;
+  color: var(--dark-blue);
+  padding: 0px 5px;
+}
+
+.LowerBorder {
+  position:absolute;
+  width: 50px;
+  height: 3px;
+}
+
+.Links a::after {
+  content: '     |';
+}
+
+.Links div:last-child a::after{
+  content: '';
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .Intro {
+    flex-direction: column;
+  }
+  .IntroText {
+    text-align: center;
+  }
+  .IntroText p {
+    font-size: 26px;
+  }
+
+  .Social img {
+    transform: scale(0.81);
+  }
+
+  .Links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Links > div {
+    margin-top: 7px;
+  }
+
+  .Links a::after {
+    content: '';
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .IntroText {
+    width: 100%;
+  }
+
+  .Social {
+    flex-direction: column;
+  }
+
+  .Social img {
+    transform: scale(0.5);
+  }
+
+  .Contact button {
+    width: 200px;
+    font-size: 16px;
+  }
+}

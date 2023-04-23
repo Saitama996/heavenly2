@@ -1,0 +1,36 @@
+.Partners {
+  display: flex;
+  justify-content: center;
+}
+
+.PartnersContainer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.PartnersContainer img {
+  transform: scale(0.5);
+  height: 140.55px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .PartnersContainer {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .PartnersContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .PartnersContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

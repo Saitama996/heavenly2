@@ -1,0 +1,19 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 115px;
+  margin-top: 54px;
+}
+
+.Hamburger {
+  display: none;
+}
+
+/* If the browser window is 900px or smaller */
+
+@media only screen and (max-width: 900px) {
+  .Hamburger {
+    display: block;
+  }
+}

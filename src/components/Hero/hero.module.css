@@ -1,0 +1,156 @@
+.Hero {
+  margin-top: 23px;
+}
+
+
+.HeroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.HeroText {
+  margin-top: 28px;
+}
+
+.HeroImages {
+  position: relative;
+}
+
+.Truck {
+  width: 401px;
+  margin: auto;
+  z-index: 2;
+}
+
+.CloudsContainer {
+  position: relative;
+  border: 1px solid yellow;
+}
+
+.Clouds {
+  z-index: 1;
+  color: #AAAAAA;
+  /* animation-name: animateClouds; */
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+}
+
+@keyframes animateClouds {
+  25% {
+    transform: translateX(-16px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  75% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(16px);
+  }
+}
+
+
+.Title {
+  font-size: 58px;
+  font-weight: bold;
+  color: var(--seconday-color-darken);
+}
+
+
+
+.Title > span {
+  color: var(--primary-color);
+}
+
+.Subtitle {
+  font-size: 40px;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-top: 35px;
+}
+
+.HeroButtons {
+  margin-top: 45px;
+  display: flex;
+  height: 82px;
+  justify-content: center;
+}
+
+/* .Down {
+  margin-top: 45px;
+  width: 100%;
+}
+
+.Outer {
+  margin: auto;
+  transform: translateX(-50%);
+  border: 8px solid var(--primary-color);
+  width: 35px;
+  height: 80px;
+  border-radius: 52px;
+}
+
+.Ball {
+  width: 15px;
+  height: 15px;
+  border: 5px solid var(--seconday-color-darken);
+  background-color: var(--seconday-color-darken);
+  border-radius: 50%;
+  margin: auto;
+  transform: translateY(5px);
+  animation: animateBall;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animateBall {
+  25% {
+    transform: translateY(25px);
+  }
+
+  50% {
+    transform: translateY(45px);
+  }
+
+  75% {
+    transform: translateY(25px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+} */
+
+/* If the browser window is 1300px or smaller */
+@media only screen and (max-width: 1300px) {
+  .Title {
+    text-align: center;
+  }
+}
+
+/* If the browser window is 850px or smaller */
+@media only screen and (max-width: 850px) {
+  .Title {
+    font-size: 40px;
+  }
+  .Subtitle {
+    font-size: 30px;
+  }
+  .Hero img {
+    transform: scale(0.7);
+  }
+  .Hero .Clouds {
+    border: 1px solid black;
+    transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Truck {
+    display: none;
+  }
+}
